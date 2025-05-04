@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JZONE | J sost Zone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Karibu JZONE | J sost Zone</h1>
+    <nav>
+      <a href="#motivation">Motisha</a>
+      <a href="#chat">Chat</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sehemu ya Malipo -->
+    <section class="payment">
+      <h2>Motisha Premium</h2>
+      <p>Baadhi ya motisha nzuri zinahitaji malipo kabla ya kudownload.</p>
+      <button onclick="showPayment()">💳 Lipia Motisha Premium</button>
+      <div id="paymentMenu" style="display:none; margin-top:10px; background:#ffe0e0; padding:10px; border-radius:8px;">
+        <p>Tuma Tsh 200 kupitia M-Pesa kwa namba:</p>
+        <strong style="font-size:18px;">+255 750 081 642</strong>
+      </div>
+    </section>
+
+
+<!-- Sehemu ya Upload Picha na Video -->
+<section id="upload-section">
+  <h2>Upload Motisha Yako</h2>
+  <form id="uploadForm" action="#" method="post" enctype="multipart/form-data">
+    <label for="fileInput">Pakia Video au Picha:</label>
+    <input type="file" id="fileInput" name="fileInput" accept="image/*, video/*" required /><br/>
+    <label for="description">Maelezo ya Motisha:</label>
+    <textarea id="description" name="description" placeholder="Andika motisha yako..." required></textarea><br/>
+    <button type="submit">Pakia Motisha</button>
+  </form>
+</section>
+
+    <!-- Motisha Zinazoendelea -->
+    <section id="motivation">
+      <h2>Motisha Zinazoendelea</h2>
+      
+      <!-- Video na Picha za Motisha-->
+      <div class="post-card">
+        <video controls>
+          <source src="video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Endelea kufanya kazi kwa bidii na utafanikiwa!</p>
+        <div class="actions">
+          <button>❤️ Like</button>
+          <button>💬 Comment</button>
+          <button>⬇️ Download</button>
+          <span>👁️ Views: 120</span>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <img src="image1.jpg" alt="Motisha Image" />
+        <p>Usikate tamaa, maisha yanaendelea!</p>
+        <div class="actions">
+          <button>❤️ Like</button>
+          <button>💬 Comment</button>
+          <button>⬇️ Download</button>
+          <span>👁️ Views: 250</span>
+        </div>
+      </div>
+      
+      <!-- Ongeza video na picha zingine hapa -->
+      <div class="post-card">
+        <video controls>
+          <source src="video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Hakuna jambo zito lisilowezekana!</p>
+        <div class="actions">
+          <button>❤️ Like</button>
+          <button>💬 Comment</button>
+          <button>⬇️ Download</button>
+          <span>👁️ Views: 302</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chat Section -->
+    <section id="chat">
+      <h2>Chat</h2>
+      <div class="chat-box" id="chatBox">
+        <p><strong>Jonas:</strong> Karibu JZONE!</p>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Andika ujumbe..." />
+        <button onclick="sendMessage()">Tuma</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 JZONE | J sost Zone</p>
+    <div class="social-links">
+      <a class="social-icon" href="#">Facebook</a>
+      <a class="social-icon" href="#">Instagram</a>
+      <a class="social-icon" href="#">TikTok</a>
+      <a class="social-icon" href="#">YouTube</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
